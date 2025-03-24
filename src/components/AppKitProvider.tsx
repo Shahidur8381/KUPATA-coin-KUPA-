@@ -14,10 +14,10 @@ const projectId = 'c8a0fdcbf36e451f903de012b577195c';
 
 // 2. Create a metadata object (optional but recommended)
 const metadata = {
-  name: 'ANANT COIN',
+  name: 'PEACISM COIN',
   description: 'Project Anant Coin Wallet Connect',
-  url: 'https://anantcoin.netlify.app', // Should match your app domain
-  icons: ['https://anantcoin.netlify.app/logo.jpg']
+  url: 'https://peacism.netlify.app', // Should match your app domain
+  icons: ['https://peacism.netlify.app/assets/peace.jpg']
 };
 
 // 3. Set the networks you want to support
