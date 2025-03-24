@@ -15,7 +15,7 @@ const projectId = 'c8a0fdcbf36e451f903de012b577195c';
 // 2. Create a metadata object (optional but recommended)
 const metadata = {
   name: 'PEACISM COIN',
-  description: 'Project Anant Coin Wallet Connect',
+  description: 'Project PEACISM Coin Wallet Connect',
   url: 'https://peacism.netlify.app', // Should match your app domain
   icons: ['https://peacism.netlify.app/assets/peace.jpg']
 };
