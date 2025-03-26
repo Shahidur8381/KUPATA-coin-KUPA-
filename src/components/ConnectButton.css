@@ -3,6 +3,8 @@
 .connect-button-container {
     position: relative;
     z-index: 100;
+    display: flex;
+    justify-content: center;
   }
   
   .connect-button {
@@ -16,6 +18,9 @@
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    min-width: 140px;
+    text-align: center;
   }
   
   .connect-button:hover {
@@ -44,6 +49,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    white-space: nowrap;
   }
   
   .chain-button:hover,
@@ -53,15 +59,23 @@
   }
   
   @media (max-width: 768px) {
+    .connect-button {
+      padding: 10px 16px;
+      font-size: 14px;
+      min-width: 120px;
+    }
+  
     .connected-container {
-      flex-direction: column;
-      gap: 4px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px;
     }
   
     .chain-button,
     .account-button {
-      width: 100%;
-      justify-content: center;
+      padding: 6px 12px;
+      font-size: 12px;
     }
   }
   
