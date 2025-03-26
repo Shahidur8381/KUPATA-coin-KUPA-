@@ -16,7 +16,7 @@ import '@rainbow-me/rainbowkit/styles.css';
 // Create a client
 const queryClient = new QueryClient();
 
-const projectId = 'c4f79ccd8d2f4f8b8f8f8f8f8f8f8f8f8'; // Replace with your WalletConnect project ID
+const projectId = 'fb26fd7c674fc059633c34b6fc14490c'; // Replace with your WalletConnect project ID
 
 const config = getDefaultConfig({
   appName: 'Peaceism',
