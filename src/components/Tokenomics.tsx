@@ -94,7 +94,7 @@ export default function Tokenomics() {
             className="bg-black/30 backdrop-blur-lg rounded-xl p-6 text-center"
           >
             <h3 className="text-xl font-semibold mb-2">Total Supply</h3>
-            <p className="text-3xl font-bold text-purple-400">1,000,000,000</p>
+            <p className="text-3xl font-bold text-purple-400">10,000,000,000</p>
             <p className="text-gray-300 mt-1">1 Billion PCSM</p>
           </motion.div>
 
