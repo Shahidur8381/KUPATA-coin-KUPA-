@@ -4,8 +4,14 @@ import { http } from 'wagmi';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import {
-  getDefaultWallets,
+  getDefaultConfig,
 } from '@rainbow-me/rainbowkit';
+import {
+  trustWallet,
+  metaMaskWallet,
+  walletConnectWallet,
+  tokenPocketWallet,
+} from '@rainbow-me/rainbowkit/wallets';
 import '@rainbow-me/rainbowkit/styles.css';
 
 // Create a client
@@ -13,25 +19,29 @@ const queryClient = new QueryClient();
 
 const projectId = 'c4f79ccd8d2f4f8b8f8f8f8f8f8f8f8f8'; // Replace with your WalletConnect project ID
 
-const { wallets } = getDefaultWallets({
+const config = getDefaultConfig({
   appName: 'Peaceism',
   projectId,
   chains: [bsc],
-});
-
-const config = createConfig({
-  chains: [bsc],
-  transports: {
-    [bsc.id]: http(),
-  },
-  connectors: wallets,
+  ssr: true, // For better mobile wallet support
+  wallets: [
+    {
+      groupName: 'Popular',
+      wallets: [
+        trustWallet,
+        metaMaskWallet,
+        tokenPocketWallet,
+        walletConnectWallet,
+      ]
+    }
+  ],
 });
 
 export function WagmiConfig({ children }: { children: React.ReactNode }) {
   return (
     <QueryClientProvider client={queryClient}>
       <WagmiProvider config={config}>
-        <RainbowKitProvider>
+        <RainbowKitProvider modalSize="compact">
           {children}
         </RainbowKitProvider>
       </WagmiProvider>
