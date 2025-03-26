@@ -2,63 +2,66 @@
 
 .connect-button-container {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 100;
   }
   
   .connect-button {
-    align-items: center;
-    background: linear-gradient(to right, #3b82f6, #8b5cf6);
+    background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
     color: white;
-    padding: 10px 20px;
-    font-size: 16px;
     border: none;
-    cursor: pointer;
-    border-radius: 9999px;
-    transition: all 0.3s ease;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   .connect-button:hover {
-    opacity: 0.9;
-    transform: scale(1.05);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
   }
   
-  .connect-button:active {
-    transform: scale(0.95);
+  .connected-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
   }
   
-  .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(8px);
-    min-width: 160px;
-    margin-top: 5px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  
-  .dropdown-item {
+  .chain-button,
+  .account-button {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    background-color: transparent;
-    border: none;
-    width: 100%;
-    text-align: center;
-    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 6px;
     font-size: 14px;
-    transition: background-color 0.3s;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
   
-  .dropdown-item:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+  .chain-button:hover,
+  .account-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+  }
+  
+  @media (max-width: 768px) {
+    .connected-container {
+      flex-direction: column;
+      gap: 4px;
+    }
+  
+    .chain-button,
+    .account-button {
+      width: 100%;
+      justify-content: center;
+    }
   }
   
