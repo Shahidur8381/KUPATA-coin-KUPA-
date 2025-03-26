@@ -22,15 +22,21 @@ const Navigation = () => {
       animate={{ y: 0 }}
       className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-lg"
     >
-      <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-        {/* Mobile Menu Button - Fixed positioning */}
-        <div className="md:hidden flex justify-end py-4 w-full">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="text-white p-2 hover:bg-white/10 rounded-lg transition-colors ml-auto"
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+      <div className="max-w-7xl mx-auto px-4">
+        {/* Mobile Header */}
+        <div className="md:hidden flex items-center justify-between py-4">
+          <div className="flex-1">
+            {/* Logo or other content */}
+          </div>
+          <div className="flex items-center gap-2">
+            <ConnectButton />
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -58,9 +64,6 @@ const Navigation = () => {
                 </li>
               ))}
               <li>
-                <ConnectButton />
-              </li>
-              <li>
                 <a
                   href="https://t.me/+u2ddKM6UbEUyODM1"
                   target="_blank"
@@ -76,37 +79,38 @@ const Navigation = () => {
         </motion.div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex justify-center space-x-8 py-6">
-          {links.map((link) => (
-            <motion.li key={link.to} whileHover={{ scale: 1.1 }}>
-              <Link
-                to={link.to}
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                className="text-lg font-medium transition-colors cursor-pointer text-gray-300 hover:text-white"
-                activeClass="text-purple-400 border-b-2 border-purple-400"
-              >
-                {link.label}
-              </Link>
-            </motion.li>
-          ))}
-        </ul>
+        <div className="hidden md:flex items-center justify-between py-4">
+          <ul className="flex space-x-8">
+            {links.map((link) => (
+              <motion.li key={link.to} whileHover={{ scale: 1.05 }}>
+                <Link
+                  to={link.to}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  className="text-base font-medium transition-colors cursor-pointer text-gray-300 hover:text-white"
+                  activeClass="text-purple-400"
+                >
+                  {link.label}
+                </Link>
+              </motion.li>
+            ))}
+          </ul>
 
-        {/* Join Us Button and Connect Wallet (Desktop) */}
-        <div className="hidden md:flex items-center gap-4">
-          <ConnectButton />
-          <motion.a
-            href="https://t.me/+u2ddKM6UbEUyODM1"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center px-6 py-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold hover:opacity-90 transition-opacity"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Join Us
-          </motion.a>
+          <div className="flex items-center gap-4">
+            <ConnectButton />
+            <motion.a
+              href="https://t.me/+u2ddKM6UbEUyODM1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 rounded-lg bg-[#6366f1] text-white font-medium hover:opacity-90 transition-opacity"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Join Us
+            </motion.a>
+          </div>
         </div>
       </div>
     </motion.nav>

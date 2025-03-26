@@ -3,79 +3,76 @@
 .connect-button-container {
     position: relative;
     z-index: 100;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .connect-button {
+}
+
+.connect-button {
     background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
     color: white;
     border: none;
-    padding: 12px 24px;
+    padding: 8px 16px;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     white-space: nowrap;
-    min-width: 140px;
+    min-width: 100px;
     text-align: center;
-  }
-  
-  .connect-button:hover {
+}
+
+.connect-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-  }
-  
-  .connected-container {
+}
+
+.connected-container {
     display: flex;
-    gap: 8px;
+    gap: 4px;
     align-items: center;
-  }
-  
-  .chain-button,
-  .account-button {
+}
+
+.chain-button,
+.account-button {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 8px 16px;
+    padding: 6px 10px;
     border-radius: 6px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
     white-space: nowrap;
-  }
-  
-  .chain-button:hover,
-  .account-button:hover {
+}
+
+.chain-button:hover,
+.account-button:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: translateY(-1px);
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .connect-button {
-      padding: 10px 16px;
-      font-size: 14px;
-      min-width: 120px;
+        padding: 6px 12px;
+        font-size: 12px;
+        min-width: 90px;
     }
-  
+
     .connected-container {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 6px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3px;
     }
-  
+
     .chain-button,
     .account-button {
-      padding: 6px 12px;
-      font-size: 12px;
+        padding: 4px 8px;
+        font-size: 11px;
     }
-  }
+}
   
