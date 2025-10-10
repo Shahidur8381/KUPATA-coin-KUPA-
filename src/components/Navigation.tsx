@@ -118,7 +118,7 @@ const Navigation = () => {
               ))}
               <li>
                 <a
-                  href="https://t.me/+u2ddKM6UbEUyODM1"
+                  href="https://t.me/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-lg font-medium text-orange-400 hover:text-orange-300 transition-colors"
@@ -156,7 +156,7 @@ const Navigation = () => {
           <div className="flex items-center gap-4">
             {/* <ConnectButton /> */}
             <motion.a
-              href="https://t.me/+u2ddKM6UbEUyODM1"
+              href="https://t.me/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 rounded-lg bg-gradient-to-r from-orange-500 to-amber-600 text-white font-medium hover:opacity-90 transition-opacity"

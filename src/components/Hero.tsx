@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Heart, Sparkles, ArrowRight } from 'lucide-react';
-import kupataImage from '../assets/kupata.jpg';
+import kupataImage from '../assets/kupata2.jpg';
 
 export default function Hero() {
   return (

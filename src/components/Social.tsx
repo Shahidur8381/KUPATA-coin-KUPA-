@@ -4,28 +4,28 @@ import { motion } from 'framer-motion';
 const socialLinks = [
   {
     name: 'Telegram',
-    url: 'https://t.me/shahidur8381',
+    url: 'https://t.me/',
     icon: 'assets/telegram.png'
   },
   {
     name: 'TikTok',
-    url: 'https://www.tiktok.com/@shahidur8381',
+    url: 'https://www.tiktok.com/@',
     icon: 'assets/tiktok.png'
   },
   {
     name: 'X',
-    url: 'https://x.com/shahidur8381',
+    url: 'https://x.com/',
     icon: 'assets/twitter.png'
   },
   {
     name: 'Instagram',
-    url: 'https://www.instagram.com/shahidur8381',
+    url: 'https://www.instagram.com/',
     icon: 'assets/instagram.png'
   },
   {
     name: 'Reddit',
-    url: 'https://www.reddit.com/user/shahidur8381',
-    icon: '/assets/reddit.png'
+    url: 'https://www.reddit.com/user/',
+    icon: '/src/assets/reddit.png'
   }
 ];
 
@@ -51,7 +51,7 @@ const Social = () => {
               <img 
                 src={social.icon} 
                 alt={social.name} 
-                className="w-8 h-8"
+                className={`w-8 h-8 ${social.name === 'Reddit' ? 'rounded-full' : ''}`}
               />
             </motion.a>
           ))}

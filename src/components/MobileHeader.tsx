@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import kupataImage from '../assets/kutapa2.jpg';
 
 export default function MobileHeader() {
   return (
@@ -8,7 +9,7 @@ export default function MobileHeader() {
       className="fixed top-0 left-0 z-[60] p-4 flex items-center gap-2 md:hidden"
     >
       <img
-        src="/assets/kupata.jpg"
+        src={kupataImage}
         alt="Kupata Coin"
         className="w-8 h-8 rounded-full object-cover"
       />
