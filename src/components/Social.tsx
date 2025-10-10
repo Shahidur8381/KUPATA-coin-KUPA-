@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 //import { Link } from 'react-scroll';
+import redditIcon from '../assets/reddit.png';
 
 const socialLinks = [
   {
@@ -25,7 +26,7 @@ const socialLinks = [
   {
     name: 'Reddit',
     url: 'https://www.reddit.com/user/',
-    icon: '/src/assets/reddit.png'
+    icon: redditIcon
   }
 ];
 
