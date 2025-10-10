@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Heart, Sparkles, ArrowRight } from 'lucide-react';
+import { Heart } from 'lucide-react';
 import kupataImage from '../assets/kupata2.jpg';
 
 export default function Hero() {
@@ -40,32 +40,6 @@ export default function Hero() {
             animal welfare globally through partnerships with verified NGOs. Every transaction contributes to a 
             brighter future for strays, turning memes into meaningful change.
           </motion.p>
-          
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="mt-8 flex justify-center md:justify-start gap-4"
-          >
-            <a
-              href="https://four.meme/token/0x081ce7210c247cea1a19227db008173f87744444?code=U94UF59B74X7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-600 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity"
-            >
-              BUY $KUPA
-              <Sparkles className="w-5 h-5" />
-            </a>
-            <a
-              href="/assets/kupata-whitepaper.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-600 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity"
-            >
-              Whitepaper
-              <ArrowRight className="w-5 h-5" />
-            </a>
-          </motion.div>
 
           <motion.div
             initial={{ opacity: 0 }}
