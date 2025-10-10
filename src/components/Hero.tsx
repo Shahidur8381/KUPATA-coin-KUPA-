@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { Globe, Sparkles, ArrowRight } from 'lucide-react';
-import { Link } from 'react-scroll';
+import { Heart, Sparkles, ArrowRight } from 'lucide-react';
+import kupataImage from '../assets/kupata.jpg';
 
 export default function Hero() {
   return (
@@ -13,9 +13,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             className="flex items-center justify-center md:justify-start gap-4 mb-6"
           >
-            <Globe className="w-8 h-8 md:w-12 md:h-12 text-blue-400" />
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-violet-500 text-transparent bg-clip-text">
-              Peaceism
+            <Heart className="w-8 h-8 md:w-12 md:h-12 text-orange-400" />
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-orange-400 via-yellow-400 to-amber-500 text-transparent bg-clip-text">
+              Kupata Coin
             </h1>
           </motion.div>
           
@@ -25,9 +25,9 @@ export default function Hero() {
             transition={{ delay: 0.2 }}
             className="mt-4 text-lg md:text-xl text-gray-300 max-w-2xl leading-relaxed"
           >
-            A decentralized cryptocurrency built on the BSC blockchain, designed to drive financial 
-            inclusion and empower communities. With a total supply of 1 billion tokens, PCSM counteracts 
-            the disruptive effects of AI and automation on global employment.
+            Kupata Coin ($KUPA) is a community-driven meme token inspired by the heartwarming legacy of Kupata, 
+            the iconic stray dog from Batumi, Georgia. Known for his gentle kindness and selfless act of guiding 
+            pedestrians across busy streets, Kupata touched hearts worldwide until his passing in 2023.
           </motion.p>
 
           <motion.p
@@ -36,8 +36,9 @@ export default function Hero() {
             transition={{ delay: 0.3 }}
             className="mt-4 text-lg md:text-xl text-gray-300 max-w-2xl leading-relaxed"
           >
-            Through our unique token distribution model, decentralized launchpad, staking mechanisms, 
-            and marketplace, we're building towards economic stability and social empowerment.
+            In his honor, $KUPA blends viral meme culture with real-world impact: raising funds to support stray 
+            animal welfare globally through partnerships with verified NGOs. Every transaction contributes to a 
+            brighter future for strays, turning memes into meaningful change.
           </motion.p>
           
           <motion.div 
@@ -46,24 +47,22 @@ export default function Hero() {
             transition={{ delay: 0.4 }}
             className="mt-8 flex justify-center md:justify-start gap-4"
           >
-            <Link
-              to="buy"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity cursor-pointer"
-            >
-              BUY
-              <Sparkles className="w-5 h-5" />
-            </Link>
             <a
-              href="/assets/peace.pdf"
+              href="https://four.meme/token/0x081ce7210c247cea1a19227db008173f87744444?code=U94UF59B74X7"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-600 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity"
             >
-              Learn More
+              BUY $KUPA
+              <Sparkles className="w-5 h-5" />
+            </a>
+            <a
+              href="/assets/kupata-whitepaper.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-600 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity"
+            >
+              Whitepaper
               <ArrowRight className="w-5 h-5" />
             </a>
           </motion.div>
@@ -74,10 +73,10 @@ export default function Hero() {
             transition={{ delay: 0.6 }}
             className="mt-8 md:mt-12"
           >
-            <div className="inline-flex items-center gap-4 px-4 md:px-6 py-2 md:py-3 bg-blue-500/20 rounded-full">
-              <span className="h-2 w-2 bg-blue-500 rounded-full animate-pulse" />
-              <p className="text-blue-400 font-medium text-sm md:text-base">
-                Promoting Fair & Inclusive Financial Systems
+            <div className="inline-flex items-center gap-4 px-4 md:px-6 py-2 md:py-3 bg-orange-500/20 rounded-full">
+              <span className="h-2 w-2 bg-orange-500 rounded-full animate-pulse" />
+              <p className="text-orange-400 font-medium text-sm md:text-base">
+                🐾 Paw-sitive vibes for pups everywhere
               </p>
             </div>
           </motion.div>
@@ -92,15 +91,15 @@ export default function Hero() {
         >
           <div className="relative w-full aspect-square max-w-[500px] mx-auto">
             <img
-              src="/assets/peace.jpg"
-              alt="Peaceism"
-              className="w-full h-full object-cover rounded-full shadow-2xl shadow-purple-500/20"
+              src={kupataImage}
+              alt="Kupata - The Legendary Street Dog"
+              className="w-full h-full object-cover rounded-full shadow-2xl shadow-orange-500/20"
               style={{
                 filter: 'brightness(1.1) contrast(1.1)',
-                border: '4px solid rgba(139, 92, 246, 0.3)'
+                border: '4px solid rgba(255, 140, 0, 0.3)'
               }}
             />
-            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/20 to-transparent" />
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-orange-500/20 to-transparent" />
           </div>
         </motion.div>
       </div>

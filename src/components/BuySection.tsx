@@ -5,7 +5,7 @@ import { parseEther } from 'viem';
 
 const PRESALE_ADDRESS = '0x0cd2a8E7E7E62bc3E85AA1F8220788bA7be68B26' as `0x${string}`;
 const BNB_RATE = 6350;
-const USDT_RATE = 10;
+// const USDT_RATE = 10; // Reserved for future USDT payment option
 
 export default function BuySection() {
   const { isConnected } = useAccount();
@@ -41,31 +41,33 @@ export default function BuySection() {
   };
 
   return (
-    <div id="buy" className="min-h-screen pt-20 md:pt-24 px-4 relative">
+    // Temporarily commented out buy section
+    // <div id="buy" className="min-h-screen pt-20 md:pt-24 px-4 relative">
+    <div style={{ display: 'none' }} id="buy" className="min-h-screen pt-20 md:pt-24 px-4 relative">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="max-w-4xl mx-auto"
       >
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent text-center">
+        {/* <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent text-center">
           Join the Presale
-        </h2>
-        <p className="text-xl text-gray-300 text-center mb-12">
+        </h2> */}
+        {/* <p className="text-xl text-gray-300 text-center mb-12">
           Be part of the Peaceism revolution
-        </p>
+        </p> */}
 
         <div className="bg-black/30 backdrop-blur-lg rounded-xl p-6 md:p-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Left Column - Token Info */}
             <div className="space-y-6">
-              <div className="bg-blue-500/10 rounded-lg p-4">
+              {/* <div className="bg-blue-500/10 rounded-lg p-4">
                 <h3 className="text-xl font-semibold text-blue-400 mb-2">Presale Details</h3>
                 <div className="space-y-2 text-gray-300">
                   <p>Rate: 1 BNB = {BNB_RATE} PCSM</p>
                   <p>Rate: 1 USDT = {USDT_RATE} PCSM</p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="bg-purple-500/10 rounded-lg p-4">
                 <h3 className="text-xl font-semibold text-purple-400 mb-2">Token Distribution</h3>

@@ -20,10 +20,10 @@ export default function App() {
         className="min-h-screen text-white"
         style={{
           background: `
-            radial-gradient(circle at 50% 0%, rgba(139, 69, 19, 0.3), transparent 50%),
-            radial-gradient(circle at 0% 50%, rgba(184, 134, 11, 0.2), transparent 50%),
-            radial-gradient(circle at 100% 50%, rgba(205, 133, 63, 0.2), transparent 50%),
-            linear-gradient(180deg, #1a0f00, #2d1810)
+            radial-gradient(circle at 50% 0%, rgba(255, 140, 0, 0.2), transparent 50%),
+            radial-gradient(circle at 0% 50%, rgba(255, 215, 0, 0.15), transparent 50%),
+            radial-gradient(circle at 100% 50%, rgba(139, 69, 19, 0.15), transparent 50%),
+            linear-gradient(180deg, #0a0a0a, #1a1410)
           `
         }}
       >
@@ -33,10 +33,10 @@ export default function App() {
           <div className="absolute inset-0" 
             style={{
               backgroundImage: `
-                radial-gradient(#d4af37, rgba(212, 175, 55, 0.2) 2px, transparent 3px)
+                radial-gradient(#ff8c00, rgba(255, 140, 0, 0.2) 2px, transparent 3px)
               `,
               backgroundSize: '50px 50px',
-              opacity: 0.1
+              opacity: 0.08
             }}
           />
         </div>
@@ -51,12 +51,12 @@ export default function App() {
               <pointLight 
                 position={[10, 10, 10]} 
                 intensity={1.5}
-                color="#ffd700"
+                color="#ff8c00"
               />
               <spotLight
                 position={[-10, -10, -10]}
                 intensity={0.5}
-                color="#b8860b"
+                color="#ffd700"
               />
               <Scene3D />
             </Suspense>

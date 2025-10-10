@@ -4,44 +4,51 @@ import { Check } from 'lucide-react';
 export default function Roadmap() {
   const phases = [
     {
-      title: "Phase 1: Foundation & Development",
-      timeline: "Months 1-3",
+      title: "Q4 2025: Foundation & Launch",
+      timeline: "Launch Phase",
       items: [
-        "Project Conceptualization – Define core objectives, tokenomics, and governance model.",
-        "BSC Integration – Develop smart contracts optimized for low fees and high-speed transactions.",
-        "Website & Whitepaper – Launch the official website and publish a detailed whitepaper.",
-        "Community Building – Establish social media presence, forums, and an early adopter program."
+        "Fair launch on Uniswap",
+        "Smart contract audit by PeckShield",
+        "Initial airdrop to early supporters",
+        "100% liquidity locked for 5 years via Unicrypt",
+        "Contract ownership renounced for trust",
+        "Launch marketing campaigns on X, TikTok, and Reddit"
       ]
     },
     {
-      title: "Phase 2: Token Launch & Initial Adoption",
-      timeline: "Months 4-6",
+      title: "Q1 2026: Staking & First Charity Payout",
+      timeline: "Community Growth",
       items: [
-        "Token Deployment – Launch PCSM token on BSC Mainnet.",
-        "Secure Exchange Listings – Get listed on DEXs (like Raydium) and apply for CEX listings.",
-        "Airdrops & Incentives – Distribute PCSM tokens to early adopters and supporters.",
-        "Beta Testing of Payment Systems – Enable token-based payments for select merchants and projects."
+        "PawStake Pool launch with up to 20% APY",
+        "First charity payout: $50K to Batumi Animal Shelter",
+        "Exclusive 'Kupata Guardians' NFT drop",
+        "Community governance via Snapshot DAO",
+        "Partnerships with Humane Society International",
+        "Listings on CoinMarketCap & DexTools"
       ]
     },
     {
-      title: "Phase 3: Financial Inclusion & Utility Expansion",
-      timeline: "Months 7-12",
+      title: "Q2 2026: NFT Marketplace & CEX Listings",
+      timeline: "Expansion Phase",
       items: [
-        "Launch Microfinance & DeFi Services – Provide lending and financial inclusion tools for the unbanked.",
-        "Partnerships with NGOs & Governments – Collaborate on initiatives for financial inclusion and empowerment.",
-        "Real-World Use Case Integration – Introduce PCSM for salary payments, small business funding, and investments.",
-        "AI & Automation Job Training Programs – Fund skill development programs for those affected by automation."
+        "Launch NFT marketplace with staking boosts",
+        "CEX listings (Gate.io, MEXC)",
+        "Token-gated merch launch (Kupata plushies)",
+        "Cross-border charity partnerships",
+        "Meme contest rewards",
+        "Monthly charity burns tied to adoption events"
       ]
     },
     {
-      title: "Phase 4: Scaling Impact & Global Reach",
-      timeline: "Year 2 & Beyond",
+      title: "Ongoing: Long-term Growth",
+      timeline: "Sustainability",
       items: [
-        "Expand DeFi Ecosystem – Develop lending, staking, and investment opportunities.",
-        "Introduce Low-Cost Remittance Solutions – Provide cheap cross-border transactions for migrants and workers.",
-        "Grow Social Empowerment Initiatives – Scale up job creation, healthcare, education, and housing projects.",
-        "Launch NFT & Tokenized Assets for Development – Enable real estate and infrastructure funding through tokenization.",
-        "Adoption in Emerging Markets – Partner with local businesses and institutions for mainstream PCSM adoption."
+        "Cross-chain bridge to Solana/Base (Q1 2026+)",
+        "Quarterly audited charity disbursements",
+        "Global stray animal rescue initiatives",
+        "Holder reflection rewards distribution",
+        "Watch supply shrink with deflationary burns",
+        "Building a worldwide community of animal lovers"
       ]
     }
   ];
@@ -54,11 +61,11 @@ export default function Roadmap() {
         viewport={{ once: true }}
         className="max-w-6xl mx-auto"
       >
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent text-center">
-          PCSM Roadmap
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-orange-400 to-amber-500 bg-clip-text text-transparent text-center">
+          Roadmap
         </h2>
         <h3 className="text-xl md:text-2xl text-gray-300 text-center mb-12">
-          Bridging Financial Gaps with Blockchain
+          Turning Memes into Meaningful Change 🐾
         </h3>
 
         <div className="space-y-8">
@@ -72,10 +79,10 @@ export default function Roadmap() {
               className="bg-black/30 backdrop-blur-lg rounded-xl p-6 md:p-8"
             >
               <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 mb-6">
-                <h3 className="text-xl md:text-2xl font-bold text-blue-400">
+                <h3 className="text-xl md:text-2xl font-bold text-orange-400">
                   {phase.title}
                 </h3>
-                <span className="text-purple-400 font-medium">
+                <span className="text-amber-400 font-medium">
                   📅 {phase.timeline}
                 </span>
               </div>
@@ -108,7 +115,7 @@ export default function Roadmap() {
           transition={{ delay: 0.6 }}
           className="mt-8 md:mt-12 text-center text-gray-300 italic"
         >
-          Building a sustainable and inclusive future with PCSM
+          Join the pack: Let's make the world a little kinder, one meme at a time! 🐕💕
         </motion.div>
       </motion.div>
     </div>
